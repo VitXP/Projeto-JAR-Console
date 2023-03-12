@@ -107,7 +107,7 @@ public class FigurasGeometricas {
                 + "|            |\n"
                 + "|            |\n"
                 + "|            |\n"
-                + "|            |\n"  
+                + "|            |\n"
                 + "+------------+\n"
         )
         );
@@ -137,7 +137,6 @@ public class FigurasGeometricas {
                 + "|                                 |\n"
                 + "|                                 |\n"
                 + "+---------------------------------+\n"
-               
         )
         );
     }
@@ -156,6 +155,156 @@ public class FigurasGeometricas {
         ));
 
     }
-    
-    
+
+    void exibirHexagonoSeria() {
+        System.out.println("    /\\\n"
+                + "   /  \\\n"
+                + "  /    \\\n"
+                + " /      \\\n"
+                + "/        \\\n"
+                + "\\        /\n"
+                + " \\      /\n"
+                + "  \\    /\n"
+                + "   \\  /\n"
+                + "    \\/");
+    }
+
+    void exibirLosangoSeria() {
+        System.out.println("   +--------------+ \n"
+                + "  /               / \n"
+                + " /               /  \n"
+                + "/               /   \n"
+                + "+--------------+     \n");
+    }
+
+    String converterNumeroSorteado(Integer numeroSorteado) {
+
+        if (numeroSorteado == 1) {
+            return "Triângulo";
+        } else if (numeroSorteado == 2) {
+            return "Quadrado";
+        } else if (numeroSorteado == 3) {
+            return "Circulo";
+        } else if (numeroSorteado == 4) {
+            return "Retangulo";
+        } else if (numeroSorteado == 5) {
+            return "Decágono";
+        } else if (numeroSorteado == 6) {
+            return "Hexágono";
+        } else if (numeroSorteado == 7) {
+            return "Eneágono";
+        } else if (numeroSorteado == 8) {
+            return "Pentágono";
+        } else if (numeroSorteado == 9) {
+            return "Quadrilátero";
+        } else {
+            return "Trapézio";
+        }
+    }
+
+    // Quiz 
+    Integer retornarRespostaPergunta1Quiz(Integer respostaDigitada, Integer pontuacao) {
+
+        pontuacao = 0;
+
+        if (respostaDigitada == 6) {
+            System.out.println(String.format("Parabéns, respota correta!\n"));
+            return 1;
+
+        } else {
+            System.out.println(String.format("A resposta correta é 6.\n"));
+            return pontuacao;
+        }
+
+    }
+
+    Integer retornarRespostaPergunta2Quiz(Integer respostaDigitada, Integer pontuacao) {
+
+        pontuacao = 0;
+
+        if (respostaDigitada == 3) {
+            System.out.println(String.format("Parabéns, respota correta!\n"));
+            return 1;
+
+        } else {
+            System.out.println(String.format("A resposta correta é 3.\n"));
+            return pontuacao;
+        }
+
+    }
+
+    Integer retornarRespostaPergunta3Quiz(Integer respostaDigitada, Integer pontuacao) {
+
+        pontuacao = 0;
+
+        if (respostaDigitada == 7) {
+            System.out.println(String.format("Parabéns, respota correta!\n"));
+            return 1;
+
+        } else {
+            System.out.println(String.format("A resposta correta é 7.\n"));
+            return pontuacao;
+        }
+
+    }
+
+    Integer retornarRespostaPergunta4Quiz(Integer respostaDigitada, Integer pontuacao) {
+
+        pontuacao = 0;
+
+        if (respostaDigitada == 0) {
+            System.out.println(String.format("Parabéns, respota correta!\n"));
+            return 1;
+
+        } else {
+            System.out.println(String.format("A resposta correta é 0.\n"));
+            return pontuacao;
+        }
+
+    }
+
+    Integer retornarRespostaPergunta5Quiz(Integer respostaDigitada, Integer pontuacao) {
+
+        pontuacao = 0;
+
+        if (respostaDigitada == 1) {
+            System.out.println(String.format("Parabéns, respota correta!\n"));
+            return 1;
+
+        } else {
+            System.out.println(String.format("A resposta correta é Sim(1).\n"));
+            return pontuacao;
+        }
+
+    }
+
+    Integer retornarRespostaPergunta6Quiz(Integer respostaDigitada, Integer pontuacao) {
+
+        pontuacao = 0;
+
+        if (respostaDigitada == 2) {
+            System.out.println(String.format("Parabéns, respota correta!\n"));
+            return 1;
+
+        } else {
+            System.out.println(String.format("A resposta correta é Não(2).\n"));
+            return pontuacao;
+        }
+
+    }
+
+    Integer retornarRespostaPergunta7Quiz(Integer respostaDigitada, Integer pontuacao) {
+
+        pontuacao = 0;
+
+        if (respostaDigitada == 11) {
+            System.out.println(String.format("Parabéns, respota correta!\n"));
+            return 1;
+
+        } else {
+            System.out.println(String.format("A resposta correta é 11.\n"));
+            return pontuacao;
+        }
+
+    }
 }
